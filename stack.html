@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stack — Gideon Twenenboah / Vigileon Codebase</title>
+<meta name="description" content="What Gideon Twenenboah (Vigileon Codebase) actually builds with — frontend, backend, real-time systems, and payments.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stack — Gideon Twenenboah / Vigileon Codebase">
+<meta property="og:description" content="What Gideon Twenenboah (Vigileon Codebase) actually builds with — frontend, backend, real-time systems, and payments.">
+<meta property="og:url" content="https://vigileoncodebase2.netlify.app/stack.html">
+<meta property="og:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stack — Gideon Twenenboah / Vigileon Codebase">
+<meta name="twitter:description" content="What Gideon Twenenboah (Vigileon Codebase) actually builds with — frontend, backend, real-time systems, and payments.">
+<meta name="twitter:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo-header.png" alt="Vigileon Codebase" style="width:34px;height:34px;border-radius:50%;flex-shrink:0;">
+      <div style="line-height:1.15;">
+        <span class="brand-name">Gideon Twenenboah</span>
+        <span class="brand-sub">Vigileon Codebase</span>
+      </div>
+    </a>
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="projects.html">Projects</a>
+      <a class="navlink active" href="stack.html">Stack</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="page-header reveal" style="border-top:none;">
+    <div class="eyebrow">Capabilities</div>
+    <h2>What I actually work with</h2>
+    <p class="section-intro">Grounded in what I've shipped, not a generic skills list.</p>
+  </section>
+
+  <section class="reveal" style="border-top:none;padding-top:0;">
+    <div class="stack-grid">
+      <div class="stack-block">
+        <div class="stack-block-title">Frontend</div>
+        <p>Vanilla JavaScript at production scale, responsive layout systems, canvas-based graphics generation, and Progressive Web App builds — installable, with offline-safe shells and live update detection.</p>
+      </div>
+      <div class="stack-block">
+        <div class="stack-block-title">Backend &amp; data</div>
+        <p>Firebase (Auth, Firestore, Realtime Database, Storage, Cloud Messaging) as a primary backend, plus serverless functions on Netlify using the Firebase Admin SDK for anything the client shouldn't do directly.</p>
+      </div>
+      <div class="stack-block">
+        <div class="stack-block-title">Real-time systems</div>
+        <p>Live presence tracking, WebRTC peer-to-peer audio with custom signaling, and push/in-app notification pipelines that actually reach people when it matters — not just when they happen to refresh.</p>
+      </div>
+      <div class="stack-block">
+        <div class="stack-block-title">Payments &amp; growth</div>
+        <p>Paystack integration for real money movement, referral and social-share mechanics, and admin tooling built for a non-technical operator to actually run the business day to day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="cta-band">
+      <div>
+        <h3>Want the full picture?</h3>
+        <p>See how all of this comes together in a real, live product.</p>
+      </div>
+      <a class="cta-btn" href="projects.html">View projects →</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:8px;">
+    <span style="display:flex;align-items:center;gap:8px;">
+      <img src="logo-header.png" alt="" style="width:20px;height:20px;border-radius:50%;">
+      © <span id="year"></span> Vigileon Codebase
+    </span>
+    <span>Built by Gideon Twenenboah</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

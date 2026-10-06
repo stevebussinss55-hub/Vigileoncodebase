@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Gideon Twenenboah / Vigileon Codebase</title>
+<meta name="description" content="Get in touch with Gideon Twenenboah (Vigileon Codebase) — open to freelance work, collaborations, and interesting problems.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Gideon Twenenboah / Vigileon Codebase">
+<meta property="og:description" content="Get in touch with Gideon Twenenboah (Vigileon Codebase) — open to freelance work, collaborations, and interesting problems.">
+<meta property="og:url" content="https://vigileoncodebase2.netlify.app/contact.html">
+<meta property="og:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Gideon Twenenboah / Vigileon Codebase">
+<meta name="twitter:description" content="Get in touch with Gideon Twenenboah (Vigileon Codebase) — open to freelance work, collaborations, and interesting problems.">
+<meta name="twitter:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo-header.png" alt="Vigileon Codebase" style="width:34px;height:34px;border-radius:50%;flex-shrink:0;">
+      <div style="line-height:1.15;">
+        <span class="brand-name">Gideon Twenenboah</span>
+        <span class="brand-sub">Vigileon Codebase</span>
+      </div>
+    </a>
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="projects.html">Projects</a>
+      <a class="navlink" href="stack.html">Stack</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="page-header reveal" style="border-top:none;">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's talk</h2>
+    <p class="section-intro">Open to freelance work, collaborations, and interesting problems.</p>
+  </section>
+
+  <section class="reveal" style="border-top:none;padding-top:0;">
+
+    <!--
+      EmailJS contact form — free tier, no backend needed, same service Vigileon League
+      uses for its own email notifications. Connected to Gideon's EmailJS account/template
+      (see the config values near the bottom of this file's script).
+    -->
+    <form class="contact-form" id="contactForm">
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="from_name" required placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="from_email" required placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required placeholder="What are you working on?"></textarea>
+      </div>
+      <button type="submit" class="form-submit-btn" id="cf-submit">Send message</button>
+      <div class="form-status" id="cf-status"></div>
+    </form>
+
+    <div class="contact-divider">or reach me directly</div>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:tweneboahgideon55@gmail.com">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">tweneboahgideon55@gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-card" href="tel:+233594847232">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">0594 847 232</div>
+        </div>
+      </a>
+      <a class="contact-card" href="https://github.com/Tweneboah556" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">Tweneboah556</div>
+        </div>
+      </a>
+      <a class="contact-card" href="https://x.com/gideontwen8717" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.4 22H1.3l8.2-9.3L1 2h7.1l4.9 6.4L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">X / Twitter</div>
+          <div class="contact-value">@gideontwen8717</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:8px;">
+    <span style="display:flex;align-items:center;gap:8px;">
+      <img src="logo-header.png" alt="" style="width:20px;height:20px;border-radius:50%;">
+      © <span id="year"></span> Vigileon Codebase
+    </span>
+    <span>Built by Gideon Twenenboah</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // EmailJS config — connected to Gideon's account/template (Contact Us template).
+  const EMAILJS_PUBLIC_KEY = 'oBYLDXomTbyW_A8Mh';
+  const EMAILJS_SERVICE_ID = 'service_nv3t47o';
+  const EMAILJS_TEMPLATE_ID = 'template_mg9zz17';
+  const emailjsConfigured = EMAILJS_PUBLIC_KEY.indexOf('YOUR_EMAILJS') === -1;
+  if(emailjsConfigured){
+    // v3 of the SDK (loaded above) expects init() to receive the key as a plain string,
+    // not an options object — that object syntax is a v4-only API and silently does
+    // nothing here, which was the actual cause of every send failing.
+    try{ emailjs.init(EMAILJS_PUBLIC_KEY); }catch(e){}
+  }
+
+  const form = document.getElementById('contactForm');
+  const statusEl = document.getElementById('cf-status');
+  const submitBtn = document.getElementById('cf-submit');
+
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    statusEl.className = 'form-status';
+    statusEl.textContent = '';
+
+    if(!emailjsConfigured){
+      statusEl.classList.add('show','error');
+      statusEl.textContent = "This form isn't connected yet — see the setup steps in the page source, or email me directly below.";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    try{
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: document.getElementById('cf-name').value,
+        from_email: document.getElementById('cf-email').value,
+        message: document.getElementById('cf-message').value
+      }, EMAILJS_PUBLIC_KEY);
+      statusEl.classList.add('show','ok');
+      statusEl.textContent = "Message sent — I'll get back to you soon.";
+      form.reset();
+    }catch(err){
+      statusEl.classList.add('show','error');
+      statusEl.textContent = 'Could not send — please try emailing me directly below instead.';
+      console.error('EmailJS send failed:', err);
+    }
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send message';
+  });
+</script>
+</body>
+</html>

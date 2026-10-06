@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Gideon Twenenboah / Vigileon Codebase</title>
+<meta name="description" content="Case studies from Gideon Twenenboah (Vigileon Codebase), including Vigileon League — a real-money competitive gaming platform.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Gideon Twenenboah / Vigileon Codebase">
+<meta property="og:description" content="Case studies from Gideon Twenenboah (Vigileon Codebase), including Vigileon League — a real-money competitive gaming platform.">
+<meta property="og:url" content="https://vigileoncodebase2.netlify.app/projects.html">
+<meta property="og:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Gideon Twenenboah / Vigileon Codebase">
+<meta name="twitter:description" content="Case studies from Gideon Twenenboah (Vigileon Codebase), including Vigileon League — a real-money competitive gaming platform.">
+<meta name="twitter:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo-header.png" alt="Vigileon Codebase" style="width:34px;height:34px;border-radius:50%;flex-shrink:0;">
+      <div style="line-height:1.15;">
+        <span class="brand-name">Gideon Twenenboah</span>
+        <span class="brand-sub">Vigileon Codebase</span>
+      </div>
+    </a>
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink active" href="projects.html">Projects</a>
+      <a class="navlink" href="stack.html">Stack</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="page-header reveal" style="border-top:none;">
+    <div class="eyebrow">Projects</div>
+    <h2>Things I've built</h2>
+    <p class="section-intro">Full case studies, not a portfolio-site link list. Vigileon League is the flagship right now — this page is where future projects will land as they ship.</p>
+  </section>
+
+  <section class="reveal" style="border-top:none;padding-top:0;">
+
+    <div class="case-card">
+      <div class="case-head">
+        <div class="case-title-row">
+          <div>
+            <div class="case-title">Vigileon League</div>
+            <p class="case-tagline">Ranked leaderboards, paid tournaments, and 1v1 challenges — with the real-time infrastructure to back it.</p>
+          </div>
+          <a class="case-link" href="https://vigileonleague.netlify.app" target="_blank" rel="noopener">View live site ↗</a>
+        </div>
+      </div>
+      <div class="case-body">
+        <p style="color:var(--ink-soft);font-size:14.5px;margin:0 0 24px;max-width:64ch;">A real-money competitive gaming platform for eFootball and Call of Duty players — tournaments, 1v1 cash challenges, live voice calling, and a full admin operations layer. Built solo, from data model to deployment.</p>
+
+        <div class="screenshot-grid">
+          <div class="screenshot-item">
+            <img src="shot_tournaments.jpg" alt="Vigileon League tournaments page">
+            <div class="screenshot-caption">Tournaments</div>
+          </div>
+          <div class="screenshot-item">
+            <img src="shot_challenges.jpg" alt="Vigileon League 1v1 challenges page">
+            <div class="screenshot-caption">1v1 Challenges</div>
+          </div>
+          <div class="screenshot-item">
+            <img src="shot_clans.jpg" alt="Vigileon League clans page">
+            <div class="screenshot-caption">Clans</div>
+          </div>
+          <div class="screenshot-item">
+            <img src="shot_profile.jpg" alt="Vigileon League player profile and match history">
+            <div class="screenshot-caption">Player profile</div>
+          </div>
+          <div class="screenshot-item" style="grid-column:1 / -1;max-width:340px;margin:0 auto;">
+            <img src="shot_flyer.jpg" alt="Vigileon League admin flyer generator with QR code">
+            <div class="screenshot-caption">Admin: marketing flyer generator</div>
+          </div>
+        </div>
+
+        <div class="feature-groups">
+          <div class="feature-group">
+            <div class="feature-group-title">Core platform</div>
+            <ul>
+              <li>Ranked leaderboard with per-tournament standings and brackets</li>
+              <li>1v1 cash challenges with configurable platform fees</li>
+              <li>Clans — team system with roles and leader controls</li>
+              <li>Deep player analytics: per-game stats, form, rivals, activity</li>
+              <li>Achievement system, auto-awarded from live stats</li>
+            </ul>
+          </div>
+          <div class="feature-group">
+            <div class="feature-group-title">Real-time &amp; comms</div>
+            <ul>
+              <li>Live "who's online" presence via Realtime Database</li>
+              <li>Peer-to-peer WebRTC voice calls between matched players</li>
+              <li>Real incoming-call ringing — accept/decline, push-alerted</li>
+              <li>In-app notifications and per-challenge chat</li>
+              <li>Tournament predictions with live community scoring</li>
+            </ul>
+          </div>
+          <div class="feature-group">
+            <div class="feature-group-title">Money &amp; growth</div>
+            <ul>
+              <li>Paystack-integrated entry fees and payouts</li>
+              <li>Withdrawal request workflow with admin review</li>
+              <li>Canvas-generated marketing flyers with embedded QR codes</li>
+              <li>Referral tracking and social share-card generation</li>
+            </ul>
+          </div>
+          <div class="feature-group">
+            <div class="feature-group-title">Admin operations</div>
+            <ul>
+              <li>Full analytics dashboard — revenue, activity, player base</li>
+              <li>Moderation: reports, blocking, dispute handling</li>
+              <li>Tournament, announcement, and content management</li>
+              <li>Live-deploy update notification for returning visitors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stack-chips">
+          <span class="stack-chip">Firebase Auth</span>
+          <span class="stack-chip">Cloud Firestore</span>
+          <span class="stack-chip">Realtime Database</span>
+          <span class="stack-chip">Cloud Storage</span>
+          <span class="stack-chip">Cloud Messaging</span>
+          <span class="stack-chip">WebRTC</span>
+          <span class="stack-chip">Netlify Functions</span>
+          <span class="stack-chip">Paystack API</span>
+          <span class="stack-chip">EmailJS</span>
+          <span class="stack-chip">PWA / Service Workers</span>
+          <span class="stack-chip">HTML5 Canvas</span>
+          <span class="stack-chip">Vanilla JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-head">
+        <div class="case-title-row">
+          <div>
+            <div class="case-title">My WiFi</div>
+            <p class="case-tagline">Turns a paper exercise book of WiFi voucher codes into a proper point-of-sale app — built for a real problem in Gideon's own village.</p>
+          </div>
+          <a class="case-link" href="https://campwifi.netlify.app" target="_blank" rel="noopener">View live site ↗</a>
+        </div>
+      </div>
+      <div class="case-body">
+        <p style="color:var(--ink-soft);font-size:14.5px;margin:0 0 24px;max-width:64ch;">When Gideon returned to his home village, the local MTN network was unstable, so vendors had started reselling WiFi access — tracking every voucher code by hand in an exercise book, crossing each one out as it sold. My WiFi replaces that book: photograph a sheet of codes and it reads them automatically, then tracks stock, sales, and earnings from there.</p>
+
+        <div class="screenshot-grid">
+          <div class="screenshot-item">
+            <img src="mywifi-home.jpg" alt="My WiFi home dashboard showing stock, sales, and earnings">
+            <div class="screenshot-caption">Dashboard</div>
+          </div>
+          <div class="screenshot-item">
+            <img src="mywifi-codes.jpg" alt="My WiFi available codes empty state">
+            <div class="screenshot-caption">Available codes</div>
+          </div>
+          <div class="screenshot-item" style="grid-column:1 / -1;max-width:340px;margin:0 auto;">
+            <img src="mywifi-settings.jpg" alt="My WiFi settings — price per code, currency, low-stock warning">
+            <div class="screenshot-caption">Settings</div>
+          </div>
+        </div>
+
+        <div class="feature-groups">
+          <div class="feature-group">
+            <div class="feature-group-title">Core features</div>
+            <ul>
+              <li>Photograph a sheet of codes — read automatically, on-device</li>
+              <li>Review and correct any misread codes before they're saved</li>
+              <li>Live stock count, all-time sales, and all-time earnings</li>
+              <li>Low-stock warning at a threshold you set</li>
+              <li>Full sold-history log</li>
+            </ul>
+          </div>
+          <div class="feature-group">
+            <div class="feature-group-title">Design choices</div>
+            <ul>
+              <li>Local-first — codes and sales never leave the phone</li>
+              <li>No account, no subscription, free forever</li>
+              <li>Manual backup/restore file instead of a cloud database</li>
+              <li>Optional PIN lock against casual snooping</li>
+              <li>Configurable currency label — not locked to one country</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stack-chips">
+          <span class="stack-chip">Progressive Web App</span>
+          <span class="stack-chip">On-device OCR</span>
+          <span class="stack-chip">Local-first storage</span>
+          <span class="stack-chip">Netlify</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-projects-note">// more case studies land here as they ship</div>
+
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:8px;">
+    <span style="display:flex;align-items:center;gap:8px;">
+      <img src="logo-header.png" alt="" style="width:20px;height:20px;border-radius:50%;">
+      © <span id="year"></span> Vigileon Codebase
+    </span>
+    <span>Built by Gideon Twenenboah</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
