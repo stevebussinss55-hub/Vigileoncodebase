@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vigileoncodebase2.netlify.app/</loc>
+    <loc>https://vigileongh.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vigileoncodebase2.netlify.app/projects.html</loc>
+    <loc>https://vigileongh.com/projects.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vigileoncodebase2.netlify.app/stack.html</loc>
+    <loc>https://vigileongh.com/stack.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vigileoncodebase2.netlify.app/about.html</loc>
+    <loc>https://vigileongh.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://vigileoncodebase2.netlify.app/contact.html</loc>
+    <loc>https://vigileongh.com/contact.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

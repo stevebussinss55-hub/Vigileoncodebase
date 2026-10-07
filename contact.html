@@ -9,15 +9,16 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact — Gideon Twenenboah / Vigileon Codebase">
 <meta property="og:description" content="Get in touch with Gideon Twenenboah (Vigileon Codebase) — open to freelance work, collaborations, and interesting problems.">
-<meta property="og:url" content="https://vigileoncodebase2.netlify.app/contact.html">
-<meta property="og:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+<meta property="og:url" content="https://vigileongh.com/contact.html">
+<meta property="og:image" content="https://vigileongh.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact — Gideon Twenenboah / Vigileon Codebase">
 <meta name="twitter:description" content="Get in touch with Gideon Twenenboah (Vigileon Codebase) — open to freelance work, collaborations, and interesting problems.">
-<meta name="twitter:image" content="https://vigileoncodebase2.netlify.app/og-image.png">
+<meta name="twitter:image" content="https://vigileongh.com/og-image.png">
 
+<link rel="canonical" href="https://vigileongh.com/contact.html">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -72,10 +73,26 @@
         <input type="email" id="cf-email" name="from_email" required placeholder="you@example.com">
       </div>
       <div class="field">
-        <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" required placeholder="What are you working on?"></textarea>
+        <label for="cf-phone">Phone / WhatsApp (optional)</label>
+        <input type="tel" id="cf-phone" name="phone" placeholder="e.g. 024 000 0000">
       </div>
-      <button type="submit" class="form-submit-btn" id="cf-submit">Send message</button>
+      <div class="field">
+        <label for="cf-type">Type of website</label>
+        <select id="cf-type" name="site_type">
+          <option>Personal website</option>
+          <option>Business website</option>
+          <option>School website / portal</option>
+          <option>Web application</option>
+          <option>Mobile app (installable)</option>
+          <option>Maintenance of existing site</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cf-message">Project description</label>
+        <textarea id="cf-message" name="message" required placeholder="Tell me about your project"></textarea>
+      </div>
+      <button type="submit" class="form-submit-btn" id="cf-submit">Send request</button>
       <div class="form-status" id="cf-status"></div>
     </form>
 
@@ -164,7 +181,8 @@
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
         from_name: document.getElementById('cf-name').value,
         from_email: document.getElementById('cf-email').value,
-        message: document.getElementById('cf-message').value
+        // Phone and type are folded into the existing 'message' field so the EmailJS template needs no changes.
+        message: 'Type: ' + document.getElementById('cf-type').value + '\nPhone/WhatsApp: ' + (document.getElementById('cf-phone').value || 'not given') + '\n\n' + document.getElementById('cf-message').value
       }, EMAILJS_PUBLIC_KEY);
       statusEl.classList.add('show','ok');
       statusEl.textContent = "Message sent — I'll get back to you soon.";
@@ -175,7 +193,7 @@
       console.error('EmailJS send failed:', err);
     }
     submitBtn.disabled = false;
-    submitBtn.textContent = 'Send message';
+    submitBtn.textContent = 'Send request';
   });
 </script>
 </body>

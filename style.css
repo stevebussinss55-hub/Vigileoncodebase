@@ -264,3 +264,29 @@ footer{
 /* Scroll reveal — subtle, respects reduced motion via the rule above */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity 0.5s ease, transform 0.5s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
+
+
+/* ---------------- ADDITIONS: hero buttons, services, pricing, mobile polish ---------------- */
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
+.cta-btn, .form-submit-btn{display:inline-block;min-height:44px;box-sizing:border-box;line-height:24px;}
+.cta-outline{background:transparent;color:var(--blue);border:1px solid var(--blue);}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.svc-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;}
+.svc-card h3{margin:0 0 6px;font-size:15.5px;color:var(--blue);}
+.svc-card p{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.price-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;}
+.price-name{font-size:14px;font-weight:600;margin-bottom:6px;}
+.price-amt{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--copper);font-weight:500;}
+.price-note{margin:16px 0 0;font-size:13.5px;color:var(--ink-soft);}
+.contact-form select{width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:14.5px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:11px 13px;box-sizing:border-box;}
+@media(max-width:900px){ .svc-grid{grid-template-columns:repeat(2,1fr);} .price-grid{grid-template-columns:repeat(2,1fr);} }
+@media(max-width:560px){
+  .svc-grid, .price-grid{grid-template-columns:1fr;}
+  .header-inner{flex-wrap:wrap;gap:8px 16px;}
+  nav{flex-wrap:wrap;}
+  .navlink{padding:6px 0;}
+  .contact-form{padding:20px;}
+  .contact-form input, .contact-form textarea, .contact-form select{font-size:16px;} /* stops iPhone auto-zoom on focus */
+  .cta-band .cta-btn{text-align:center;}
+}
