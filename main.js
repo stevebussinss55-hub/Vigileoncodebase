@@ -8,7 +8,7 @@ if('IntersectionObserver' in window){
     entries.forEach(entry=>{
       if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.01 });
   revealEls.forEach(el=> io.observe(el));
 } else {
   revealEls.forEach(el=> el.classList.add('in'));
